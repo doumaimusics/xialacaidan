@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.10.1.min.js"></script>
+	</head>
+	<style>
+	*{padding: 0;margin: 0;list-style: none;}
+		.box{width: 300px; border: 1px solid #333;margin: 50px auto;height: auto;}
+		h3{width: 100%;height: 30px; line-height: 30px;
+		   cursor:pointer;background: #BDBDBD;border-bottom:1px solid #fff ;
+		   text-align: center;color: #fff;
+		   background: url(images/pro_left.png) no-repeat #bdbdbd;
+		   background-size:28px 19px;
+		   background-position:20px center;		   
+		}
+		.box .coll_body{
+			display: none;
+		}
+		.box .coll_body a{
+			display: block;
+			margin: 10px;
+			text-align: center;
+			background: #ebebeb;
+		}
+		.current{
+			background: url(images/pro_down.png) no-repeat 20px center #bdbdbd;}
+	</style>
+	<body>
+		<div class="box">
+			<h3>星期一</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>
+            <h3>星期二</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>	
+			<h3>星期三</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>
+			<h3>星期四</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>
+			<h3>星期五</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>
+			<h3>星期六</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>
+			<h3>星期日</h3>
+			<div class="coll_body">
+				<a href="#">语文</a>
+				<a href="#">数学</a>
+				<a href="#">英语</a>
+				<a href="#">化学</a>
+				<a href="#">物理</a>
+				<a href="#">科学</a>				
+			</div>			
+		</div>
+	</body>
+</html>
+<script>
+//			$(function() {
+////				$(".coll_body").eq(0).show();
+//				$("h3").click(function() {
+//					$(this).toggleClass("current").siblings('h3').removeClass("current"); //切换图标
+//					$(this).next(".coll_body").stop().slideToggle(500).siblings(".coll_body").slideUp(500);
+//				});
+//			});
+			
+			
+			$(function(){
+				$('h3').click(function(){
+					$(this).addClass('current').siblings('h3').removeClass('current');
+					$(this).next('.coll_body').stop().slideToggle(500),siblings('.coll_body').slideUp(500)
+				})
+			})
+</script>
